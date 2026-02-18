@@ -1,0 +1,256 @@
+/* Substack Dark Mode — only active when toggled */
+
+.substack-dark {
+  --sd-bg: #1a1a2e;
+  --sd-bg-raised: #22223a;
+  --sd-bg-input: #2a2a42;
+  --sd-text: #d4d4dc;
+  --sd-text-muted: #9999aa;
+  --sd-heading: #eeeef0;
+  --sd-link: #7eb8da;
+  --sd-link-hover: #a8d4f0;
+  --sd-border: #333355;
+  --sd-blockquote-bg: #22223a;
+  --sd-blockquote-border: #555577;
+  --sd-code-bg: #2a2a42;
+}
+
+/* ============ Base ============ */
+
+.substack-dark,
+.substack-dark body {
+  background-color: var(--sd-bg) !important;
+  color: var(--sd-text) !important;
+}
+
+/* ============ Typography ============ */
+
+.substack-dark h1,
+.substack-dark h2,
+.substack-dark h3,
+.substack-dark h4,
+.substack-dark h5,
+.substack-dark h6 {
+  color: var(--sd-heading) !important;
+}
+
+.substack-dark p,
+.substack-dark li,
+.substack-dark td,
+.substack-dark th,
+.substack-dark span,
+.substack-dark div,
+.substack-dark label,
+.substack-dark figcaption {
+  color: var(--sd-text) !important;
+}
+
+.substack-dark a {
+  color: var(--sd-link) !important;
+}
+
+.substack-dark a:hover {
+  color: var(--sd-link-hover) !important;
+}
+
+/* ============ Article content ============ */
+
+.substack-dark .body.markup,
+.substack-dark .available-content,
+.substack-dark .single-post,
+.substack-dark .post,
+.substack-dark .post-content,
+.substack-dark .post-header,
+.substack-dark .post-footer,
+.substack-dark .post-meta {
+  background-color: var(--sd-bg) !important;
+  color: var(--sd-text) !important;
+}
+
+.substack-dark .post-title,
+.substack-dark .post-title a {
+  color: var(--sd-heading) !important;
+}
+
+.substack-dark .subtitle {
+  color: var(--sd-text-muted) !important;
+}
+
+/* ============ Navbar / Header ============ */
+
+.substack-dark .navbar,
+.substack-dark .topbar,
+.substack-dark .header-sidebar-wrapper,
+.substack-dark header,
+.substack-dark [class*="navbar"],
+.substack-dark [class*="topbar"],
+.substack-dark [class*="header"],
+.substack-dark [class*="Header"],
+.substack-dark nav,
+.substack-dark [role="banner"],
+.substack-dark [class*="publication-header"],
+.substack-dark [class*="pencraft"] {
+  background-color: var(--sd-bg) !important;
+  color: var(--sd-text) !important;
+  border-color: var(--sd-border) !important;
+}
+
+/* Nuclear: force all top-level children of body dark */
+.substack-dark body > * {
+  background-color: var(--sd-bg) !important;
+}
+
+/* ============ Blockquotes ============ */
+
+.substack-dark blockquote {
+  background-color: var(--sd-blockquote-bg) !important;
+  border-left-color: var(--sd-blockquote-border) !important;
+  color: var(--sd-text) !important;
+}
+
+/* ============ Code ============ */
+
+.substack-dark pre,
+.substack-dark code {
+  background-color: var(--sd-code-bg) !important;
+  color: var(--sd-text) !important;
+}
+
+/* ============ Buttons ============ */
+
+.substack-dark .button,
+.substack-dark button,
+.substack-dark [class*="subscribe"] button,
+.substack-dark [class*="btn"] {
+  border-color: var(--sd-border) !important;
+}
+
+/* ============ Inputs ============ */
+
+.substack-dark input,
+.substack-dark textarea,
+.substack-dark select {
+  background-color: var(--sd-bg-input) !important;
+  color: var(--sd-text) !important;
+  border-color: var(--sd-border) !important;
+}
+
+/* ============ Dividers / Borders ============ */
+
+.substack-dark hr {
+  border-color: var(--sd-border) !important;
+}
+
+.substack-dark [class*="divider"],
+.substack-dark [class*="separator"] {
+  background-color: var(--sd-border) !important;
+  border-color: var(--sd-border) !important;
+}
+
+/* ============ Cards / Raised surfaces ============ */
+
+/* Containers and wrappers match base bg for uniform look */
+.substack-dark [class*="container"],
+.substack-dark [class*="wrapper"] {
+  background-color: var(--sd-bg) !important;
+  color: var(--sd-text) !important;
+  border-color: var(--sd-border) !important;
+}
+
+/* Only truly floating elements get the raised bg */
+.substack-dark [class*="card"],
+.substack-dark [class*="modal"],
+.substack-dark [class*="dialog"],
+.substack-dark [class*="popup"],
+.substack-dark [class*="overlay"],
+.substack-dark [class*="tooltip"],
+.substack-dark [class*="dropdown"] {
+  background-color: var(--sd-bg-raised) !important;
+  color: var(--sd-text) !important;
+  border-color: var(--sd-border) !important;
+}
+
+/* ============ Footer ============ */
+
+.substack-dark footer,
+.substack-dark [class*="footer"] {
+  background-color: var(--sd-bg) !important;
+  color: var(--sd-text-muted) !important;
+}
+
+/* ============ Images — keep visible ============ */
+
+.substack-dark img {
+  opacity: 0.9;
+}
+
+.substack-dark img:hover {
+  opacity: 1;
+}
+
+/* ============ Tables ============ */
+
+.substack-dark table {
+  border-color: var(--sd-border) !important;
+}
+
+.substack-dark th {
+  background-color: var(--sd-bg-raised) !important;
+}
+
+.substack-dark td {
+  background-color: var(--sd-bg) !important;
+}
+
+.substack-dark tr {
+  border-color: var(--sd-border) !important;
+}
+
+/* ============ Selection ============ */
+
+.substack-dark ::selection {
+  background-color: #445588 !important;
+  color: #ffffff !important;
+}
+
+/* ============ Scrollbar ============ */
+
+.substack-dark ::-webkit-scrollbar {
+  width: 10px;
+}
+
+.substack-dark ::-webkit-scrollbar-track {
+  background: var(--sd-bg);
+}
+
+.substack-dark ::-webkit-scrollbar-thumb {
+  background: var(--sd-border);
+  border-radius: 5px;
+}
+
+/* ============ Override Substack CSS variables ============ */
+
+.substack-dark {
+  --background_pop: var(--sd-bg) !important;
+  --color_theme_bg_pop: var(--sd-bg) !important;
+  --print_on_pop: var(--sd-text) !important;
+  --background_contrast_1: var(--sd-bg) !important;
+  --background_contrast_2: var(--sd-bg-input) !important;
+  --background_contrast_3: var(--sd-border) !important;
+  --background_contrast_4: var(--sd-text-muted) !important;
+  --background_contrast_5: var(--sd-text) !important;
+  --theme_bg_is_dark: 1 !important;
+}
+
+/* ============ Catch-all for stray white backgrounds ============ */
+
+.substack-dark [style*="background-color: white"],
+.substack-dark [style*="background-color: #fff"],
+.substack-dark [style*="background-color: #ffffff"],
+.substack-dark [style*="background: white"],
+.substack-dark [style*="background: #fff"],
+.substack-dark [style*="background: #ffffff"],
+.substack-dark [style*="background-color: rgb(255, 255, 255)"],
+.substack-dark [style*="background-color: rgb(255,255,255)"] {
+  background-color: var(--sd-bg) !important;
+}
